@@ -1,0 +1,12 @@
+{
+  "name": "rpiWeb2day",
+  "version": "0.0.1",
+  "description": "Web2Day slides",
+  "repository": "",
+  "author": "Xavier Seignard <xavier.seignard@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt": "~0.4.1"
+  }
+}

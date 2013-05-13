@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+  
+  ZBOUB!
+-->
+
+<html>
+<head>
+<title>Raspberry Pi et objets connectés</title>
+
+<meta charset='utf-8'>
+
+<script src="js/slides.js"></script>
+
+<style media="print">
+@page {
+	size: A4 landscape;
+}
+
+article {
+	page-break-after: always;
+	margin: auto;
+}
+
+article.next,article.past {
+	display: block;
+}
+
+body {
+	display: block !important;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 1.5em;
+}
+img {
+	max-width: 650px;
+	max-height: 400px;
+}
+</style>
+<script type="text/javascript">
+        window.addEventListener('load', function(){
+            var link = document.getElementsByTagName('link');
+            link[link.length-1].setAttribute ("media","screen");
+        });
+</script>
+<script src="http://localhost:35729/livereload.js"></script>
+</head>
+
+<style>
+.center {
+	text-align: center;
+}
+body {
+	background: #1C140D!important;
+}
+article {
+	opacity: 0.7;
+}
+article.current {
+	opacity: 1;
+}
+</style>
+
+<body style='display: none'>
+
+	<section class='slides layout-regular template-default'>
+
+		<article class='nobackground'>
+			<h1 class="center" style="margin-top: 0px;">
+				Raspberry Pi et objets connectés
+			</h1>
+
+			<p class="center">
+				<img alt="rpi" src="images/logo.png"><br>
+			</p>
+			<div class='source'
+				style="right: 60px; text-align: right; padding-right: 0px;">
+				<span style="float: left;">Web2Day 2013 </span>
+				<a target="_blank" href="https://twitter.com/#!/xavier_seignard">@xavier_seignard</a>
+			</div>
+
+		</article>
+		
+		<article class='nobackground'>
+			<h3 class="center">Un ordinateur pour moins de 40€!</h3>
+			<ul>
+				<li>De la taille d'une carte de crédit</li>
+				<li>Puissant comme un smartphone de moyenne gamme</li>
+				<li>Complètement open source (matériel et logiciel)</li>
+				<li>Géré par la fondation Raspberry Pi</li>
+				<li>Destiné à l'apprentissage de l'informatique</li>
+			</ul>
+		</article>
+		
+		<article class='nobackground'>
+			<h3 class="center">Sous le capot</h3>
+			<p class="center">
+				<img alt="board" src="images/rpiBoard.png" style="width: 100%;">
+			</p>
+		</article>
+
+		<article class='nobackground'>
+			<h3 class="center">GPIOs</h3>
+			<ul>
+				<li>General Purpose Input/Output</li>
+				<li>Connecter capteurs, boutons, leds, moteurs, etc. au Raspberry Pi</li>
+				<li>Les GPIOs peuvent communiquer avec le reste du Raspberry Pi</li>
+			</ul>
+		</article>
+
+		<article class='nobackground'>
+			<h3 class="center">Du Raspberry Pi vers le Web</h3>
+			<ul>
+				<li>Envoyer des données sur le web</li>
+				<li>Mesures de capteurs, streaming audio/video, etc.</li>
+			</ul>
+			<br>
+			<h3 class="center">Du Web vers le Raspberry Pi</h3>
+			<ul>
+				<li>Controller le Raspberry Pi à distance</li>
+				<li>Actionneurs, moteurs, etc.</li>
+			</ul>
+			<br>
+			<h3 class="center">Et mixer les deux!</h3>
+		</article>
+
+		<article class='nobackground'>
+			<h3 class="center">Téléphoner à sa cafetière</h3>
+			<iframe src="http://player.vimeo.com/video/54300364" width="500" height="375" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		</article>
+
+		<article class='nobackground'>
+			<h3 class="center">Connecter les années 50 au web</h3>
+			<iframe width="500" height="375" src="http://www.youtube.com/embed/qUwVybkWp3o?rel=0" frameborder="0" allowfullscreen></iframe>
+		</article>
+
+		<article class='nobackground'>
+			<h3 class="center">DIY Google Glasses</h3>
+			<p class="center">
+				<img alt="rpi glasses" src="images/rpiGlass.jpg" style="width: 100%;">
+			</p>
+			<div class='source'>
+				Source: <a target="_blank"
+					href="http://www.instructables.com/id/RaspberryPi-Powered-Wearable-Computer/?ALLSTEPS">http://www.instructables.com/id/RaspberryPi-Powered-Wearable-Computer</a>
+			</div>
+		</article>
+
+		<article class='nobackground'>
+			<h3 class="center">Controller un jouet depuis un iPhone (ou le web)</h3>
+			<iframe width="500" height="375" src="http://www.youtube.com/embed/a6_O2T5SPBQ?rel=0" frameborder="0" allowfullscreen></iframe>
+		</article>
+
+		<article class='nobackground'>
+			<h3 class="center">Imprimer le temps qu'il fait</h3>
+			<p class="center">
+				<img alt="rpi weather" src="images/rpiPrint.jpg" style="height: 100%;">
+			</p>
+			<div class='source'>
+				Source: <a target="_blank"
+					href="http://learn.adafruit.com/pi-thermal-printer">http://learn.adafruit.com/pi-thermal-printer</a>
+			</div>
+		</article>
+
+		<article class='nobackground'>
+			<h3 class="center">Arduino vs. Raspberry Pi : le faux débat</h3>
+			<ul>
+				<li>Pas de choix magique</li>
+				<li>Choisir en fonction de ses besoins et contraintes</li>
+				<li>Consommation électrique : ~0.5W pour Arduino, ~3.5W pour Raspberry Pi</li>
+				<li>Rapidité de mise en route : quasi instantanée pour l'Arduino, ~30s pour Raspberry Pi</li>
+				<li>Connexion au web plus simple avec Raspberry Pi</li>
+				<li>Avez-vous vraiment besoin d'un OS? D'un GPU? ...</li>
+			</ul>
+		</article>
+
+		<article class='nobackground'>
+			<h3 class="center">Groupe Raspberry Pi Nantes</h3>
+			<ul>
+				<li>Tous les mercredi au Stéréolux de 18h30 à 21h30</li>
+				<li><a target="_blank" href="http://www.stereolux.org/atelier-public/groupe-raspberry-pi-17-04-2013">La page du groupe sur http://www.stereolux.org</a></li>
+				<li>Domotique</li>
+				<li>Régie lumière, DMX</li>
+				<li>Photo et time lapsing</li>
+				<li>Controlleurs MIDI</li>
+				<li>Etc.</li>
+			</ul>
+		</article>
+		<article class='nobackground'>
+			<h3 class="center">Aller plus loin</h3>
+			<ul>
+				<li><a target="_blank"
+					href="http://www.raspberrypi.org/">http://www.raspberrypi.org/</a></li>
+				<li><a target="_blank"
+					href="http://learn.adafruit.com/category/raspberry-pi">Apprendre Raspberry Pi</a></li>
+				<li><a target="_blank"
+					href="http://www.raspberrypi.org/archives/2965">Manuel Raspberry Pi</a></li>
+				<li>Votre moteur de recherche préféré</li>
+			</ul>
+		</article>
+
+		<article class='nobackground'>
+			<h3 class="center">Merci de votre attention!</h3>
+			<p class="center">
+				<img alt="rpi love arduino" src="images/rpiArduino.jpg" style="width: 100%;">
+			</p>
+		</article>
+
+	</section>
+
+</body>
+</html>
