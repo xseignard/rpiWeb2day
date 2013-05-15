@@ -13,7 +13,7 @@ var SLIDE_CONFIG = {
       'Source Code Pro'
     ]
   },
-  // Author information
+  // Author info
   presenters: [{
     name: 'Xavier Seignard',
     twitter: '@xavier_seignard'
